@@ -37,7 +37,8 @@ body, .wrapper {
     font-family: 'Montserrat';
 }
 
-.product-categories li a, .product-item-content, .product-item::before, .actions-products ul li a, .actions-products, .link-product-abs, .product-item-img img {
+.product-categories li a, .product-item-content, .product-item::before, .actions-products ul li a, .actions-products, 
+.link-product-abs, .product-item-img img, .list-account li a {
     transition: var(--default-transition);
     -webkit-transition: var(--default-transition);
     -moz-transition: var(--default-transition);
@@ -50,7 +51,7 @@ body, .wrapper {
 }
 
 .head-columns span {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .circle-icon-head-column {
@@ -201,6 +202,7 @@ span.price-product {
 .actions-products {
     position: absolute;
     right: -100%;
+    opacity: 0;
 }
 
 .actions-products ul li {
@@ -225,7 +227,6 @@ span.price-product {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--prim-color-events);
 }
 
 .actions-products ul li a:hover {
@@ -239,8 +240,9 @@ span.price-product {
     right: 0;
 }
 
-.product-item:hover .actions-products {
+.product-item:hover .actions-products, .actions-products:hover {
     right: 10px;
+    opacity: 1;
 }
 
 .font-two-level {
@@ -303,4 +305,74 @@ span.price-product {
     to {
         background-position: 32px 0px;
     }
+}
+
+.bg-whit {
+    background-color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.list-account li a {
+    display: flex;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: var(--prim-color-events);
+    border: 1px solid var(--prim-color-events);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.list-account li a:hover {
+    background-color: var(--prim-color-events);
+    color: var(--bg-color);
+}
+
+.list-account li {
+    margin-right: 15px;
+}
+
+.list-account li:last-child {
+    margin-right: 0;
+}
+
+.fancybox__content {
+    max-width: 900px !important;
+}
+
+.rating i {
+    display: flex;
+    align-items: center;
+}
+
+.modal-fancy-content {
+    max-width: 900px;
+    max-height: 600px;
+}
+
+.customers span {
+    font-size: 13px;
+}
+
+.product-single-description p {
+    line-height: 1.8;
+    max-height: 202px;
+    overflow-y: auto;
+}
+
+.count-product {
+    max-width: 100px;
+}
+.price-xl {
+    font-size: 24px !important;
 }
