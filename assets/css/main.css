@@ -33,7 +33,7 @@ ul>li {
 
 html,
 body, .wrapper {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     font-family: 'Montserrat';
 }
 
@@ -357,7 +357,6 @@ header {
 
 .modal-fancy-content {
     max-width: 900px;
-    max-height: 600px;
 }
 
 .customers span {
@@ -375,4 +374,36 @@ header {
 }
 .price-xl {
     font-size: 24px !important;
+}
+
+/* login */
+
+.login__100 {
+    position: relative;
+    color: #686868;
+    width: 100%;
+}
+
+.login__100>label {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    left: 20px;
+}
+
+.login__100 input {
+    background-color: #e6e6e6;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    box-shadow: 0;
+    border: none;
+    padding: 0 20px 0 60px;
+}
+
+.fancybox__content {
+    align-items: center;
 }

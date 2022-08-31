@@ -1,0 +1,33 @@
+.wrap-content.w-100.d-flex.f-col
+    .container.whit-bg.mt-5-xl.p-4
+        .row
+            .col-lg-3
+                .sidebar-left
+                    h4.filter-title.p-3.mb-0 Категории
+                        i.fa-solid.fa-timeline.ms-2
+                    hr.m-0
+                    .filter-content.py-3 
+                        ul.product-categories.mb-0.px-3 
+                            li
+                                a(href='#ovoshi')
+                                    i.fa-solid.fa-caret-right.me-2
+                                    ='Овощи'
+                            li
+                                a(href='#fructs')
+                                    i.fa-solid.fa-caret-right.me-2
+                                    ='Фрукты'
+            .col-lg-9 
+                .item-products-once.mb-5(id='ovoshi')
+                    h1.mb-4.prim-col-text.text-center.font-two-level Овощи
+                    .content-products.px-2.row
+
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug
+                        include product-item.pug

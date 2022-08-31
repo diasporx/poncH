@@ -12,4 +12,27 @@ $(document).ready(function () {
         sl.css('top', 'calc(' + hh + 'px + 20px)') // calc(hh + 20px);
     }
 
+    Fancybox.defaults.infinite = 0;
+
+    Fancybox.bind("[data-fancybox]", {
+        infinite: false,
+        preload: 0,
+        dragToClose: false,
+        autoplay: false
+    });
+
+    if ($('a[href^="#"]').length) {
+        $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+                $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - ($('header').height())
+            });
+        });
+    }
+
+
 });

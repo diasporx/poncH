@@ -1,0 +1,35 @@
+//- 
+- var imgproduct = 'assets/1-270x300.jpg'
+//- 
+
+.col-lg-4.col-md-6.col-sm-6.col-xs-6.py-2.overflow-hidden
+    .product-item.justify-content-center.d-flex.f-col
+        .product-item-img.position-relative
+            img(src=imgproduct alt='')
+            a.link-product-abs(data-fancybox data-type='iframe' href='product.html' data-preload='true' data-width='fit-content')
+            span.on-sale.product-flash -22%
+        .product-item-content.py-3 
+            .text-center
+                h6.title-product.truncate-text
+                    a(data-fancybox data-type="iframe" href="product.html") Броколли
+                .w-100.d-flex.justify-content-center.py-2.rating 
+                    i.fa-solid.fa-star
+                    i.fa-solid.fa-star
+                    i.fa-solid.fa-star
+                    i.fa-solid.fa-star
+                    i.fa-solid.fa-star
+                span.price-before.me-2
+                    s 440.00
+                        i.fa-solid.fa-ruble-sign 
+                span.price-product 410.00
+                    i.fa-solid.fa-ruble-sign 
+        .actions-products
+            ul
+                li 
+                    a(href='#' data-bs-toggle="tooltip" data-bs-placement="top" title="В корзину")
+                        i.fa-solid.fa-cart-arrow-down
+                li 
+                    a(href='#' data-bs-toggle="tooltip" data-bs-placement="top" title="В избранное")
+                        i.fa-solid.fa-heart
+                    
+                
