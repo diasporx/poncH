@@ -1,0 +1,18 @@
+//- 
+- var imgbg = 'assets/Sweets_Candy_Chocolate_Black_background_521530_1920x1080.jpg'
+//- 
+
+doctype html
+html(lang='en')
+    head
+        include components/head.pug
+    body
+        section.wrapper
+            .parallax-window(data-parallax='scroll' data-image-src=imgbg)
+                header
+                    include components/header.pug
+
+                include components/backet-content.pug
+
+
+        include components/scripts.pug

@@ -34,5 +34,8 @@ $(document).ready(function () {
         });
     }
 
+    if($('.price-all').length) {
+        $('.price-all').html('Сумма вашей корзины: ' + '<b>' + $('.list-cart li .in-cart').toArray().reduce((summ, current) => +current.innerText + summ, 0) + '</b>' + ' руб')
+    }
 
 });
